@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My website</title>
+  <link rel="stylesheet" href="Mywebsite.css">
+  <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+  <nav id="dekstop-nav">
+    <div class="logo">Shashwat Prakash Shukla</div>
+    <div class="one">
+      <ul class="nav-links">
+        <li><a href="#about"> About</a></li>
+        <li><a href="#Experience"> Experience</a></li>
+        <li><a href="#Projects"> Projects</a></li>
+        <li><a href="#Contact"> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <!-- naya nav isliye kyuki hamburger logo  JAYEe -->
+  <nav id="hamburger-nav">
+    <div class="logo">Shashwat Prakash Shukla</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">
+        About</a></li>
+        <li><a href="#Experience" onclick="toggleMenu()"> Experience</a></li>
+        <li><a href="#Projects" onclick="toggleMenu()">
+        Projects</a></li>
+        <li><a href="#Contact" onclick="toggleMenu()"> 
+        Contact</a></li>
+        
+      </div>
+    </div>
+  </nav>
+  
+  <!-- profile section -->
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./profile-pic.png" alt="my profile picture">
+    </div>
+    <div class="section">
+      <p class="section_text_pi">Hello, I'm</p>
+      <h1 class="title">SHASHWAT</h1>
+      <p class="section_text_p2">Student|Entreperneur</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="
+          window.open('./resume-example.pdf')">
+           Download CV
+          </button>
+        <button class="btn btn-color-1" onclick="
+          location.href='./#Contact'"> Contact Info</button>  
+      </div>
+      <div id="socials-container">
+        <img src="./linkedin (1).png" class="icon" onclick="
+          location.href='https://linkedin.com/'">
+        <img src="./github (2).png" class="icon" onclick="
+          location.href='https://github.com/'"> 
+        <img src="./instagram.png" class="icon" onclick="
+          location.href='https://instagram.com/'">
+        <img src="./youtube.png" class="icon" onclick="
+          location.href='https://youtube.com/'"> 
+        <img src="./social.png" class="icon" onclick="
+          location.href='https://whatsapp.com/'">
+        <img src="./twitter-2.png.png" class="icon" onclick="
+          location.href='https://twitter.com/'">         
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section_text_pi">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img
+          src="./shashwat.png"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>2+ years <br />Development and Entreperneurship</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>Higher Secondary School<br/>
+              &<br>
+            Certifications</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am Shashwat an aspiring 17-yrs old entreperneur
+            passionate about tecnology and innovation.Actively seeking to connect visionary founders and co-founders to collaborate on impactful ventures and
+            also involved in projects that explore machine learning algorithms,natural language processing amd computer vision.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="Experience">
+    <p class="section_text_pi">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">
+            Frontend Development
+          </h2>
+          <div class="article-container">
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>SASS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>Material UI</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- 2 nd detail container -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">
+            Frontend Development
+          </h2>
+          <div class="article-container">
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./checkmark.png" class="icon">
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="Projects">
+  <p class="section_text_pi">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./project-1.png" class="project-img">
+        </div>
+        <h2 class="experience-sub-title" project-title>
+          Project One
+        </h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn-1"
+           onclick="location.href='https://github.com'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn-1"
+           onclick="location.href='https://github.com'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./project-2.png" class="project-img">
+        </div>
+        <h2 class="experience-sub-title" project-title>
+          Project Two
+        </h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn-2"
+           onclick="location.href='https://github.com'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn-2"
+           onclick="location.href='https://github.com'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./project-3.png" class="project-img">
+        </div>
+        <h2 class="experience-sub-title" project-title>
+          Project Three
+        </h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn-3"
+           onclick="location.href='https://github.com'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn-3"
+           onclick="location.href='https://github.com'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+
+<section id="Contact">
+  <p class="section_text_pi">Get in Touch</p>
+  <h1 class="title"> Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./gmail.png" class="icon contact-icon">
+      <p><a href="mailto:shashwat.prakash9@gmail.com">
+        shashwat.prakash9@gmail.com
+      </a></p>
+    </div>
+
+    <div class="contact-info-container">
+      <img src="./linkedin (1).png" class="icon contact-icon">
+      <p><a href="mailto:shashwat.prakash9@gmail.com">
+        Linkedin
+      </a></p>
+    </div>
+
+    <div class="contact-info-container">
+      <img src="./smartphone.png" class="icon contact-icon">
+      <p><a href="mailto:shashwat.prakash9@gmail.com">
+        +91 7518163287
+      </a></p>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about"> About</a></li>
+        <li><a href="#Experience"> Experience</a></li>
+        <li><a href="#Projects"> Projects</a></li>
+        <li><a href="#Contact"> Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Shashwat Prakash Shukla. All right Reserved. </p>
+</footer>    
+
+  
+  <script src="Mywebsite.js"></script>
+  
+</body>
+</html>
